@@ -18,15 +18,6 @@ namespace GradeBook
         
             var average = result / grades.Count;
             Console.WriteLine($"The average grade is {average:N3}"); // :N3 -> round to three decimal places
-            
-            if(args.Length > 0) 
-            {
-                Console.WriteLine($"Hello {args[0]}!");
-            }
-            else 
-            {
-                Console.WriteLine("Hello!");
-            }
         }
     }
 }
