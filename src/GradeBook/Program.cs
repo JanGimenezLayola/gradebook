@@ -20,9 +20,7 @@ namespace GradeBook
 
             foreach(double number in grades)
             {
-                if(number > highGrade) {
-                    highGrade = number;
-                }
+                highGrade = Math.Max(number, highGrade);
                 result += number;
             }
             Console.WriteLine($"The sum grades is {result}");
