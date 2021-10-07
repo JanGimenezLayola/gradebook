@@ -6,6 +6,12 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
+            
+            // var program = new Program();
+            // can't call program.Main()
+            // Program.Main(args);
+            // this causes a infinit loop
+
             var book = new Book("Jan's Grade Book");
             book.AddGrade(89.1);
 
