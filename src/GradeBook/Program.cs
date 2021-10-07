@@ -20,7 +20,7 @@ namespace GradeBook
             Console.WriteLine($"The sum grades is {result}");
         
             var average = result / grades.Count;
-            Console.WriteLine($"The average grade is {average:N3}"); // :N3 -> round to three decimal places
+            Console.WriteLine($"The average grade is {average:N1}"); // :N3 -> round to three decimal places
         }
     }
 }
