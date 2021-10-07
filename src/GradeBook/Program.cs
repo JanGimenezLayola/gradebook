@@ -16,13 +16,16 @@ namespace GradeBook
             grades.Add(56.1);
             
             var result = 0.0;
+            var lowGrade = double.MaxValue;
             var highGrade = double.MinValue;
 
             foreach(double number in grades)
             {
+                lowGrade = Math.Min(number, lowGrade);
                 highGrade = Math.Max(number, highGrade);
                 result += number;
             }
+
             Console.WriteLine($"The sum grades is {result}");
         
             var average = result / grades.Count;
