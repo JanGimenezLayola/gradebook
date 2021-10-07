@@ -27,6 +27,8 @@ namespace GradeBook
             }
 
             Console.WriteLine($"The sum grades is {result}");
+            Console.WriteLine($"The lowest grade is {lowGrade}");
+            Console.WriteLine($"The higher grade is {highGrade}");
         
             var average = result / grades.Count;
             Console.WriteLine($"The average grade is {average:N1}"); // :N3 -> round to three decimal places
