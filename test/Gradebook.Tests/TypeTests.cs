@@ -9,12 +9,12 @@ namespace GradeBook.Tests
         public void ValueTypesAlsoPassByValue()
         {
             var x = GetInt();
-            SetInt(x);
+            SetInt(ref x);
 
             Assert.Equal(42, x);
         }
 
-        private void SetInt(int value)
+        private void SetInt(ref int value)
         {
             value = 42;
         }
