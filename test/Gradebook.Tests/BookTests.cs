@@ -6,14 +6,14 @@ namespace GradeBook.Tests
     public class BookTests
     {
         [Fact]
-        public void Test1()
+        public void BookCalculateAnAverageGrade()
         {
             // arrenge
             var book = new Book("");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);
-            
+
             // act
             var result = book.GetStatistics();
 
